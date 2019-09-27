@@ -1,4 +1,8 @@
-# carp3t
+# Carp3t
+
+## 3D printing calculator
+
+![carp3t](https://raw.githubusercontent.com/dbalas/carp3t/master/snap.png)
 
 ## Project setup
 ```
