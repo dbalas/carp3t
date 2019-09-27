@@ -1,20 +1,23 @@
 <template>
     <div id="app">
-        <grouped-form></grouped-form>
+        <carp3t-form></carp3t-form>
     </div>
 </template>
 
 <script>
-import GroupedForm from '@/components/GroupedForm';
+import Carp3tForm from '@/components/Carp3tForm';
 export default {
     name: 'App',
     components: {
-        GroupedForm,
+        Carp3tForm,
     },
 };
 </script>
 
 <style lang="scss">
+@import '@/assets/variables';
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
