@@ -265,10 +265,14 @@ export default {
 form {
     width: 50%;
     max-width: 600px;
-    margin: auto;
+    margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+
+    @media screen and (max-width: 1000px) {
+        width: 95%;
+    }
 
     label.col-form-label {
         font-size: 0.9rem;
