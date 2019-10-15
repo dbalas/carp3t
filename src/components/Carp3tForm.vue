@@ -1,7 +1,7 @@
 <template>
     <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+        <div class="price-label">{{ totals.material.toFixed(2) }}€</div>
         <b-form-group :label="$t('Material')" class="mb-0">
-            <span class="price-label">{{ totals.material.toFixed(2) }}€</span>
             <b-form-group
                 id="material-quantity-group"
                 :label="$t('Quantity')"
@@ -39,10 +39,8 @@
                 </b-input-group>
             </b-form-group>
         </b-form-group>
+        <div class="price-label">{{ totals.electricity.toFixed(2) }}€</div>
         <b-form-group :label="$t('Electricity')" class="mb-0 mt-4">
-            <span class="price-label"
-                >{{ totals.electricity.toFixed(2) }}€</span
-            >
             <b-form-group
                 label-cols-sm="4"
                 :label="$t('Consumption')"
@@ -95,8 +93,9 @@
                 </b-input-group>
             </b-form-group>
         </b-form-group>
+
+        <div class="price-label">{{ totals.labor.toFixed(2) }}€</div>
         <b-form-group :label="$t('Labor')" class="mb-0 mt-4">
-            <span class="price-label">{{ totals.labor.toFixed(2) }}€</span>
             <b-form-group
                 label-cols-sm="4"
                 :label="$t('Processing time')"
@@ -132,8 +131,8 @@
                 </b-input-group>
             </b-form-group>
         </b-form-group>
+        <div class="price-label">{{ totals.others.toFixed(2) }}€</div>
         <b-form-group :label="$t('Others')" class="mb-4 mt-4">
-            <span class="price-label">{{ totals.others.toFixed(2) }}€</span>
             <b-form-group
                 label-cols-sm="4"
                 :label="$t('Failure rate')"
@@ -308,10 +307,14 @@ form {
     }
 
     .price-label {
-        position: absolute;
-        top: 0;
+        position: relative;
+        top: 48px;
         right: 0;
+        text-align: right;
         font-size: 0.95rem;
+        &:first-child {
+            top: 25px;
+        }
     }
 
     .total-label {
