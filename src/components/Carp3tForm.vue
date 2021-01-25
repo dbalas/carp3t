@@ -9,7 +9,7 @@
                 label-cols-sm="4"
             >
                 <b-input-group>
-                    <template v-slot:append>
+                    <template #append>
                         <b-input-group-text>g</b-input-group-text>
                     </template>
                     <b-form-input
@@ -27,7 +27,7 @@
                 label-cols-sm="4"
             >
                 <b-input-group>
-                    <template v-slot:append>
+                    <template #append>
                         <b-input-group-text>€/kg</b-input-group-text>
                     </template>
                     <b-form-input
@@ -49,7 +49,7 @@
                 label-for="consumption"
             >
                 <b-input-group>
-                    <template v-slot:append>
+                    <template #append>
                         <b-input-group-text>W</b-input-group-text>
                     </template>
                     <b-form-input
@@ -66,7 +66,7 @@
                 label-for="electricityCost"
             >
                 <b-input-group>
-                    <template v-slot:append>
+                    <template #append>
                         <b-input-group-text>€/kWh</b-input-group-text>
                     </template>
                     <b-form-input
@@ -83,7 +83,7 @@
                 label-for="printingTime"
             >
                 <b-input-group>
-                    <template v-slot:append>
+                    <template #append>
                         <b-input-group-text>h</b-input-group-text>
                     </template>
                     <b-form-input
@@ -103,7 +103,7 @@
                 label-for="processingHours"
             >
                 <b-input-group>
-                    <template v-slot:append>
+                    <template #append>
                         <b-input-group-text>h</b-input-group-text>
                     </template>
                     <b-form-input
@@ -120,7 +120,7 @@
                 label-for="laborCost"
             >
                 <b-input-group>
-                    <template v-slot:append>
+                    <template #append>
                         <b-input-group-text>€/h</b-input-group-text>
                     </template>
                     <b-form-input
@@ -140,7 +140,7 @@
                 label-for="failureRate"
             >
                 <b-input-group>
-                    <template v-slot:append>
+                    <template #append>
                         <b-input-group-text>%</b-input-group-text>
                     </template>
                     <b-form-input

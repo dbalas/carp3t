@@ -1,0 +1,17 @@
+export default {
+    Electricity: 'Electricity',
+    Material: 'Material',
+    Cost: 'Cost',
+    Consumption: 'Consumption',
+    Quantity: 'Quantity',
+    Labor: 'Labor',
+    'Price/hour': 'Price/hour',
+    'Processing time': 'Processing time',
+    Hours: 'Hours',
+    'Printing time': 'Printing time',
+    Others: 'Others',
+    'Failure rate': 'Failure rate',
+    Calculate: 'Calculate',
+    Reset: 'Reset',
+    Total: 'Total',
+};

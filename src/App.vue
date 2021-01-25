@@ -8,6 +8,10 @@
 import Carp3tForm from '@/components/Carp3tForm';
 export default {
     name: 'App',
+    beforeMount() {
+        const params = new URLSearchParams(window.location.search);
+        if (params.has('lang')) this.$root.$i18n.locale = params.get('lang');
+    },
     components: {
         Carp3tForm,
     },
